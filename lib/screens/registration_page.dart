@@ -10,7 +10,7 @@ import '../services/auth_service.dart';
 import 'login_page.dart';
 
 class RegistrationPage extends StatefulWidget {
-  const RegistrationPage({Key? key}) : super(key: key);
+  const RegistrationPage({super.key});
 
   @override
   State<RegistrationPage> createState() => _RegistrationPageState();
@@ -257,7 +257,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                   // Register As Dropdown
                   CustomDropdown(
                     value: _selectedRole,
-                    items: [
+                    items: const [
                       'Register as ${AppStrings.rolePatient}',
                       'Register as ${AppStrings.roleDoctor}',
                       'Register as ${AppStrings.roleNurse}',

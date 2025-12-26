@@ -8,7 +8,7 @@ import '../../widgets/animated_button.dart';
 import 'dart:async';
 
 class DreptoStorePage extends StatefulWidget {
-  const DreptoStorePage({Key? key}) : super(key: key);
+  const DreptoStorePage({super.key});
 
   @override
   State<DreptoStorePage> createState() => _DreptoStorePageState();
@@ -791,7 +791,7 @@ class _ProductDetailsSheetState extends State<_ProductDetailsSheet> {
                                   color: AppColors.success.withOpacity(0.1),
                                   shape: BoxShape.circle,
                                 ),
-                                child: Icon(
+                                child: const Icon(
                                   Icons.check,
                                   size: 14,
                                   color: AppColors.success,

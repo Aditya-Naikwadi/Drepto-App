@@ -12,7 +12,7 @@ class CustomCard extends StatefulWidget {
   final double borderRadius;
 
   const CustomCard({
-    Key? key,
+    super.key,
     required this.child,
     this.onTap,
     this.padding,
@@ -21,7 +21,7 @@ class CustomCard extends StatefulWidget {
     this.gradient,
     this.enableHover = true,
     this.borderRadius = 12,
-  }) : super(key: key);
+  });
 
   @override
   State<CustomCard> createState() => _CustomCardState();

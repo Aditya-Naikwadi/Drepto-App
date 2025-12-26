@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../constants/app_colors.dart';
 
 class ComingSoonBanner extends StatelessWidget {
-  const ComingSoonBanner({Key? key}) : super(key: key);
+  const ComingSoonBanner({super.key});
 
   @override
   Widget build(BuildContext context) {

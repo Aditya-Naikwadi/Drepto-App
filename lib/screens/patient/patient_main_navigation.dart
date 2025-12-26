@@ -9,7 +9,7 @@ import 'profile_page.dart';
 import 'notifications_page.dart';
 
 class PatientMainNavigation extends StatefulWidget {
-  const PatientMainNavigation({Key? key}) : super(key: key);
+  const PatientMainNavigation({super.key});
 
   @override
   State<PatientMainNavigation> createState() => _PatientMainNavigationState();

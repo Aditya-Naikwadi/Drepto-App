@@ -9,13 +9,13 @@ class CustomDropdown extends StatelessWidget {
   final Widget? prefixIcon;
 
   const CustomDropdown({
-    Key? key,
+    super.key,
     required this.value,
     required this.items,
     required this.hint,
     required this.onChanged,
     this.prefixIcon,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class CustomDropdown extends StatelessWidget {
         ),
       ),
       child: DropdownButtonFormField<String>(
-        value: value,
+        initialValue: value,
         hint: Text(
           hint,
           style: const TextStyle(

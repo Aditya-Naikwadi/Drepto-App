@@ -10,14 +10,13 @@ import 'constants/app_routes.dart';
 import 'constants/app_strings.dart';
 import 'constants/app_colors.dart';
 import 'services/auth_service.dart';
-import 'models/user_model.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -105,15 +104,15 @@ class MyApp extends StatelessWidget {
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
-            borderSide: BorderSide(color: AppColors.border),
+            borderSide: const BorderSide(color: AppColors.border),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
-            borderSide: BorderSide(color: AppColors.primary, width: 2),
+            borderSide: const BorderSide(color: AppColors.primary, width: 2),
           ),
           errorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
-            borderSide: BorderSide(color: AppColors.error),
+            borderSide: const BorderSide(color: AppColors.error),
           ),
           contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
           hintStyle: GoogleFonts.poppins(color: AppColors.textHint),
@@ -147,14 +146,14 @@ class MyApp extends StatelessWidget {
         ),
         
         // Floating Action Button Theme
-        floatingActionButtonTheme: FloatingActionButtonThemeData(
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(
           backgroundColor: AppColors.primary,
           foregroundColor: Colors.white,
           elevation: 4,
         ),
         
         // Divider Theme
-        dividerTheme: DividerThemeData(
+        dividerTheme: const DividerThemeData(
           color: AppColors.border,
           thickness: 1,
           space: 1,
@@ -190,7 +189,7 @@ class MyApp extends StatelessWidget {
 
 // Optimized Splash screen with faster loading
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  const SplashScreen({super.key});
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -268,7 +267,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: AppColors.primaryGradient,
         ),
         child: Center(

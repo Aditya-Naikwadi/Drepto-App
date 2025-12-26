@@ -4,7 +4,7 @@ import '../../constants/app_colors.dart';
 import '../../widgets/coming_soon_banner.dart';
 
 class AmbulancePage extends StatefulWidget {
-  const AmbulancePage({Key? key}) : super(key: key);
+  const AmbulancePage({super.key});
 
   @override
   State<AmbulancePage> createState() => _AmbulancePageState();
@@ -96,7 +96,7 @@ class _AmbulancePageState extends State<AmbulancePage> with SingleTickerProvider
             ),
             child: Row(
               children: [
-                Icon(Icons.warning_amber, color: Colors.red, size: 32),
+                const Icon(Icons.warning_amber, color: Colors.red, size: 32),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Column(

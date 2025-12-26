@@ -6,7 +6,7 @@ import '../../services/health_record_service.dart';
 import 'package:intl/intl.dart';
 
 class HealthRecordsPage extends StatefulWidget {
-  const HealthRecordsPage({Key? key}) : super(key: key);
+  const HealthRecordsPage({super.key});
 
   @override
   State<HealthRecordsPage> createState() => _HealthRecordsPageState();
@@ -86,7 +86,7 @@ class _HealthRecordsPageState extends State<HealthRecordsPage> {
                 ),
                 const SizedBox(height: 12),
                 DropdownButtonFormField<HealthRecordType>(
-                  value: selectedType,
+                  initialValue: selectedType,
                   decoration: InputDecoration(
                     labelText: 'Type',
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
@@ -259,7 +259,7 @@ class _HealthRecordsPageState extends State<HealthRecordsPage> {
                           type,
                         ),
                       );
-                    }).toList(),
+                    }),
                   ],
                 ),
               ),
@@ -465,7 +465,7 @@ class _HealthRecordsPageState extends State<HealthRecordsPage> {
                     label: Text('View', style: GoogleFonts.poppins(fontSize: 12)),
                     style: OutlinedButton.styleFrom(
                       foregroundColor: AppColors.primary,
-                      side: BorderSide(color: AppColors.primary),
+                      side: const BorderSide(color: AppColors.primary),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),
                       ),

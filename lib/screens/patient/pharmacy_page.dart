@@ -5,7 +5,7 @@ import '../../widgets/coming_soon_banner.dart';
 import 'dart:async';
 
 class PharmacyPage extends StatefulWidget {
-  const PharmacyPage({Key? key}) : super(key: key);
+  const PharmacyPage({super.key});
 
   @override
   State<PharmacyPage> createState() => _PharmacyPageState();

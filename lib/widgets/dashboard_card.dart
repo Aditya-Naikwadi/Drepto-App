@@ -10,13 +10,13 @@ class DashboardCard extends StatelessWidget {
   final Color? iconColor;
 
   const DashboardCard({
-    Key? key,
+    super.key,
     required this.icon,
     required this.title,
     this.subtitle,
     this.onTap,
     this.iconColor,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

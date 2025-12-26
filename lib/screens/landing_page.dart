@@ -8,7 +8,7 @@ import 'login_page.dart';
 import 'registration_page.dart';
 
 class LandingPage extends StatefulWidget {
-  const LandingPage({Key? key}) : super(key: key);
+  const LandingPage({super.key});
 
   @override
   State<LandingPage> createState() => _LandingPageState();
@@ -282,7 +282,7 @@ class _LandingPageState extends State<LandingPage> with SingleTickerProviderStat
   Widget _buildStatsSection(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 60),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: AppColors.primaryGradient,
       ),
       child: Wrap(

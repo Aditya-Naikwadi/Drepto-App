@@ -14,7 +14,7 @@ import 'ambulance_page.dart';
 import 'profile_page.dart';
 
 class PatientHomePage extends StatefulWidget {
-  const PatientHomePage({Key? key}) : super(key: key);
+  const PatientHomePage({super.key});
 
   @override
   State<PatientHomePage> createState() => _PatientHomePageState();
@@ -67,7 +67,7 @@ class _PatientHomePageState extends State<PatientHomePage> with SingleTickerProv
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CircularProgressIndicator(color: AppColors.primary),
+              const CircularProgressIndicator(color: AppColors.primary),
               const SizedBox(height: 16),
               Text('Loading...', style: GoogleFonts.poppins(color: AppColors.textSecondary)),
             ],
@@ -101,9 +101,9 @@ class _PatientHomePageState extends State<PatientHomePage> with SingleTickerProv
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.fromLTRB(24, 60, 24, 32),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: AppColors.primaryGradient,
-        borderRadius: const BorderRadius.only(
+        borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(32),
           bottomRight: Radius.circular(32),
         ),
@@ -312,7 +312,7 @@ class _PatientHomePageState extends State<PatientHomePage> with SingleTickerProv
                     color: AppColors.success.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: Icon(Icons.tips_and_updates, color: AppColors.success, size: 28),
+                  child: const Icon(Icons.tips_and_updates, color: AppColors.success, size: 28),
                 ),
                 const SizedBox(width: 16),
                 Expanded(

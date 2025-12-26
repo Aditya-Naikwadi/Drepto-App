@@ -4,7 +4,7 @@ import '../../constants/app_colors.dart';
 import '../../widgets/coming_soon_banner.dart';
 
 class PremiumPlansPage extends StatefulWidget {
-  const PremiumPlansPage({Key? key}) : super(key: key);
+  const PremiumPlansPage({super.key});
 
   @override
   State<PremiumPlansPage> createState() => _PremiumPlansPageState();

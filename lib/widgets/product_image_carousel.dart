@@ -7,10 +7,10 @@ class ProductImageCarousel extends StatefulWidget {
   final double height;
 
   const ProductImageCarousel({
-    Key? key,
+    super.key,
     required this.images,
     this.height = 250,
-  }) : super(key: key);
+  });
 
   @override
   State<ProductImageCarousel> createState() => _ProductImageCarouselState();

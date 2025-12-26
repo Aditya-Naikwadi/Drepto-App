@@ -6,7 +6,7 @@ import '../../services/order_service.dart';
 import 'package:intl/intl.dart';
 
 class OrdersHistoryPage extends StatefulWidget {
-  const OrdersHistoryPage({Key? key}) : super(key: key);
+  const OrdersHistoryPage({super.key});
 
   @override
   State<OrdersHistoryPage> createState() => _OrdersHistoryPageState();
@@ -131,7 +131,7 @@ class _OrdersHistoryPageState extends State<OrdersHistoryPage> with SingleTicker
                               type,
                             ),
                           );
-                        }).toList(),
+                        }),
                       ],
                     ),
                   ),
@@ -357,7 +357,7 @@ class _OrdersHistoryPageState extends State<OrdersHistoryPage> with SingleTicker
                     _showOrderDetails(order);
                   },
                   style: OutlinedButton.styleFrom(
-                    side: BorderSide(color: AppColors.primary),
+                    side: const BorderSide(color: AppColors.primary),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),

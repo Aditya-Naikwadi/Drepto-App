@@ -6,11 +6,11 @@ class ShimmerLoading extends StatefulWidget {
   final BorderRadius? borderRadius;
 
   const ShimmerLoading({
-    Key? key,
+    super.key,
     required this.width,
     required this.height,
     this.borderRadius,
-  }) : super(key: key);
+  });
 
   @override
   State<ShimmerLoading> createState() => _ShimmerLoadingState();
@@ -73,7 +73,7 @@ class _ShimmerLoadingState extends State<ShimmerLoading>
 
 // Card Shimmer for list items
 class CardShimmer extends StatelessWidget {
-  const CardShimmer({Key? key}) : super(key: key);
+  const CardShimmer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -134,7 +134,7 @@ class CardShimmer extends StatelessWidget {
 class ListShimmer extends StatelessWidget {
   final int itemCount;
 
-  const ListShimmer({Key? key, this.itemCount = 5}) : super(key: key);
+  const ListShimmer({super.key, this.itemCount = 5});
 
   @override
   Widget build(BuildContext context) {
